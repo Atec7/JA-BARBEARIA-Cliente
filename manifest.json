@@ -1,6 +1,6 @@
 {
-  "name": "ADM",
-  "short_name": "ADM",
+  "name": "Agendar",
+  "short_name": "Agendar",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#121212",
@@ -8,14 +8,15 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "logo.png",
+      "src": "logo.jpg",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "logo.png",
+      "src": "logo.jpg",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/jpg"
     }
   ]
 }
+
