@@ -624,6 +624,15 @@ font-weight: bold; box-shadow: 0 0 10px #FFD700aa; z-index: 9999; cursor: pointe
   renderizarHistorico();
 </script>
  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js');
+        .then(reg => console.log('Service Worker registrado!', reg.scope))
+        .catch(err => console.error('Erro ao registrar o Service Worker', err));
+    });
+  }
+</script>
+  <script>
   let deferredPrompt;
   const installPrompt = document.getElementById('installPrompt');
 
@@ -655,7 +664,6 @@ font-weight: bold; box-shadow: 0 0 10px #FFD700aa; z-index: 9999; cursor: pointe
     installPrompt.style.display = 'none';
   });
 </script>
-
 
 </body>
 </html>
